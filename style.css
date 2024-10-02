@@ -1,0 +1,244 @@
+*{
+    padding: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/* .afacad-flux-<uniquifier> {
+    font-family: "Afacad Flux", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+} */
+
+
+body{
+    font-family: "Afacad Flux", sans-serif;
+    font-weight: bold;
+    /* overflow-x:hidden ; */
+}
+
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;  
+}
+
+.container-flex{
+    display: flex;
+}
+
+header{
+    background-color: rgb(73, 72, 72);
+}
+
+header .nav{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    list-style: none;  
+}
+
+.nav li{
+    padding: 16px;
+}
+
+.nav a{
+    text-decoration: none;
+    color: white;
+}
+
+.img-48-leis{
+    width: 60%;
+    height: 60%;
+}
+
+.section-color{
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.padding-section{
+    padding: 26px;
+}
+
+.title{
+    margin-left: -2em;
+    margin-top: 7em;
+    color: aliceblue;
+}
+
+.who{
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+section{
+    margin-bottom: 22px;
+}
+
+.about{
+    margin-right: 7%;
+}
+
+.about h2{
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+
+.photo{
+    width: 100%;
+}
+
+
+.livro{
+    width: 50%;
+}
+
+.about-livro h1{
+    color: white;
+}
+
+.about-livro h2,
+.about-livro p{
+    color: white;
+    margin-bottom: 8px;
+}
+
+.images-container{
+    display: grid;
+    grid-template-columns: repeat(4, 24.25%);
+    column-gap: 1%;
+    width: 100%;
+    text-align: center;
+}
+
+.frases img{
+    width: 80%;
+}
+
+footer {
+    background-color: rgb(73, 72, 72);
+    color: white;
+}
+
+footer .container-flex{
+    justify-content: space-between;
+    padding: 16px;
+}
+
+footer button{
+    padding: 8px;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 767px ) {
+    
+    /* body{
+        overflow-x: hidden;
+    } */
+    .container{
+        width: 90%;
+    }
+
+    .img-48-leis{
+        width: 100%;
+        
+    }
+
+    .padding-section{
+        padding: none;
+    }
+
+    .container-flex{
+        display: block;
+    }
+
+    .title{
+        margin-left: 0px;
+        margin-top: 0px;
+        color: aliceblue;
+    }
+
+    .about h2{
+        text-align: center;
+    }
+
+    .container .photo{
+        margin-top: 8px;
+        width: 100%;
+    }
+
+    .about{
+        margin-right: 0%;
+    }
+
+    .about-livro .livro{
+        width: 80%;
+        text-align: center; 
+    }
+
+    .about-livro{
+       padding-bottom: 8px;
+    }
+
+    .images-container{
+        display: block;
+        text-align: center;
+    }
+    
+    .frases img{
+        width: 80%;
+    }
+
+    footer .container-flex{
+        display: flex;
+        justify-content: space-between;
+        padding: 16px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    
+    .container{
+        width: 90%;
+    }
+
+    .photo{
+        width: 60%;
+    }
+
+    .about-livro .livro{
+        width: 50%;
+    }
+
+
+    .images-container{
+        display: grid;
+        grid-template-columns: repeat(2, 49.5%);
+        column-gap: 1%;
+        row-gap: 2%;
+        width: 100%;
+        text-align: center; 
+    }
+
+    .frases img{
+        width: 80%;
+        margin-bottom: 8px;
+    }
+
+}
+
+
+
+
